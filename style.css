@@ -1,0 +1,143 @@
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      background-color: rgb(109, 151, 137);
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #333;
+      color: #fff;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    nav {
+      background: #444;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      justify-content: right;
+      flex-wrap: wrap;
+    }
+
+    nav ul li {
+      margin: 0.5rem;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      display: block;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    nav ul li a:hover {
+      background: #ff6600;
+      color: #000;
+    }
+
+    main {
+      padding: 2rem;
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    section {
+      flex: 1;
+      min-width: 250px;
+    }
+
+    .contact-form {
+      margin-top: 2rem;
+      background: #9bc859;
+      padding: 1rem;
+      border-radius: 10px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 0.5rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+
+    .contact-form button {
+      padding: 0.7rem 1.5rem;
+      background: #333;
+      color: rgb(26, 176, 71);
+      border: none;
+      border-radius: 1px;
+      cursor: pointer;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .contact-form button:hover {
+      background: #ff6600;
+      color: #000;
+    }
+
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+
+    .responsive-video {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+    }
+
+    .responsive-video video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    .styled-image {
+      border: 5px solid #ccc;
+      padding: 10px;
+      max-width: 100%;
+      height: auto;
+    }
+
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      main {
+        flex-direction: column;
+      }
+    }
+  
+    video, img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+      }
+      h1{
+        color: hsl(100, 58%, 48%);
+      }
